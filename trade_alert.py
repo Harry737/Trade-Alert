@@ -43,6 +43,7 @@ def check_prices():
             if current_price <= threshold_value:
                 results.append(f"{key} price has decreased.")
     
+    print(results)
     return jsonify(results)
 
 if __name__ == '__main__':
